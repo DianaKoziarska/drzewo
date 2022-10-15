@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css"/>  -->
+    <link rel="stylesheet" href="style.css">
+    <title>Tree</title>
+</head>
+
+<body>
+    <div>
+        <div id="myDiagramDiv"></div>
+        <button id="add" onclick="add()">Add</button>
+        <button id="remove" onclick="remove()">Remove</button>
+        <button class='find'id="findName" onclick="findName()">Find name</button>
+        <button class='find'id="AllMatching" onclick="printAll('matching')">Find all matching</button>
+        <button class='find'id="AllWithPrefix" onclick="printAll('prefix')">Find all with prefix</button>
+        <button class='find'id="All" onclick="printAll('all')">Find all</button>
+        <input type="text" id="inputField" placeholder="...">
+    </div>
+
+<div id="myItemList"></div>
+
+    <script src="https://unpkg.com/gojs/release/go-debug.js"></script>
+    <!-- <script src="https://unpkg.com/gojs/release/go.js"></script> -->
+    <script src="tree.js"></script>
+
+</body>
+</html>
